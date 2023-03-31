@@ -29,7 +29,7 @@ definePageMeta({
   layout: "auth"
 })
 useHead({
-  title: 'Forgot Password | supaAuth'
+  title: 'Forgot Password | Authentication project'
 })
 const email = ref('')
 const client = useSupabaseAuthClient()

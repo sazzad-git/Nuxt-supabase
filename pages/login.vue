@@ -44,7 +44,7 @@ definePageMeta({
   layout: "auth"
 })
 useHead({
-  title: 'Login | supaAuth'
+  title: 'Login | Authentication project'
 })
 const user = useSupabaseUser()
 const loading = ref(false)

@@ -61,6 +61,8 @@ const client = useSupabaseAuthClient()
 const user = useSupabaseUser()
 const loading = ref(false)
 
+const router = useRouter()
+
 const logout = async () => {
   loading.value = true
   const { error } = await client.auth.signOut()

@@ -36,7 +36,7 @@ definePageMeta({
   layout: "auth"
 })
 useHead({
-  title: 'New Password | supaAuth'
+  title: 'New Password | Authentication project'
 })
 const password = ref('')
 const passwordConfirm = ref('')
