@@ -3,19 +3,30 @@
     <p v-if="user" class="fVeafc in">Hi {{ user.user_metadata.first_name }}</p>
     <p v-else class="fVeafc">unauthenticated</p>
     <h1 class="kKxhrq">
-      Nuxt3 + Supabase
-      <br>
-      Starter Template
+      Authentication project
     </h1>
     <p class="kRTmDC">
-      Authentication template with email and password, using Supabase. If you want to a quick start to your next Nuxt3 app, please feel free to use this template.
+
     </p>
     <div class="uQxNj" v-if="user">
+
+      <NuxtLink class="bQRHNT" to="/protected">
+        <span class="fKlELC">
+          Go to protected route
+          <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="taKtSf">
+            <path class="chevron" d="M8 13L13 8L8 3" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round">
+            </path>
+            <path class="stem" d="M12 8L2 8" stroke-width="1.5"></path>
+          </svg>
+        </span>
+      </NuxtLink>
+
       <button @click="logout" class="ieMfVH" :disabled="loading">
-        <span class="fKlELC" :class="{loading: loading}">
+        <span class="fKlELC" :class="{ loading: loading }">
           Log out
         </span>
-        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="jjoFVh" :class="{loading: loading}">
+        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="jjoFVh"
+          :class="{ loading: loading }">
           <g fill="none" stroke-width="1.5" stroke-linecap="round" class="faEWLr" style="stroke: var(--icon-color);">
             <circle stroke-opacity=".2" cx="8" cy="8" r="6"></circle>
             <circle cx="8" cy="8" r="6" class="VFMrX"></circle>
@@ -26,9 +37,10 @@
     <div class="uQxNj" v-else>
       <NuxtLink class="bQRHNT" to="/login">
         <span class="fKlELC">
-          Login 
+          Login
           <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="taKtSf">
-            <path class="chevron" d="M8 13L13 8L8 3" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+            <path class="chevron" d="M8 13L13 8L8 3" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round">
+            </path>
             <path class="stem" d="M12 8L2 8" stroke-width="1.5"></path>
           </svg>
         </span>
@@ -59,9 +71,9 @@ const logout = async () => {
 }
 
 useHead({
-  title: 'supaAuth',
+  title: 'Home - Authentication project',
   meta: [
-    { name: 'description', content: 'Authentication template with email and password, using Supabase. If you want to a quick start to your next Nuxt3 app, please feel free to use this template.' }
+    { name: 'description', content: 'Authentication with email and password.' }
   ]
 })
 </script>

@@ -16,11 +16,6 @@
         </label>
         <label class="iJLvzO">
           <div class="fdCSlG">
-            <input class="cmCuLh" type="text" placeholder="Company (Optional)" v-model="company" />
-          </div>
-        </label>
-        <label class="iJLvzO">
-          <div class="fdCSlG">
             <input class="cmCuLh" type="text" placeholder="Email address" v-model="email" />
           </div>
         </label>
@@ -40,16 +35,6 @@
             </g>
           </svg>
         </button>
-        <div class="xxEKN">
-          By signing up you agree to our
-          <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer" class="bkFclS">
-            <span>API Terms of Service</span>
-          </a>
-          and
-          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="bkFclS">
-            <span>Privacy Policy</span>
-          </a>.
-        </div>
       </div>
     </form>
   </div>
@@ -66,7 +51,6 @@ const email = ref('')
 const password = ref('')
 const name = ref('')
 const lastname = ref('')
-const company = ref('')
 const client = useSupabaseAuthClient()
 const user = useSupabaseUser()
 const loading = ref(false)
@@ -74,7 +58,7 @@ const authError = ref('')
 
 watchEffect(async () => {
   if (user.value) {
-    await navigateTo('/')
+    await navigateTo('/protected')
   }
 });
 
@@ -88,8 +72,7 @@ const signUp = async () => {
     options: {
       data: {
         first_name: name.value,
-        last_name: lastname.value,
-        company: company.value
+        last_name: lastname.value
       }
     }
   })

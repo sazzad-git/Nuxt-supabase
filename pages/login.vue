@@ -29,7 +29,7 @@
       </div>
     </form>
     <div class="jGQTZC">
-      <p class="dEDhcH">Don’t have a SupaAuth account?</p>
+      <p class="dEDhcH">Don't have a account?</p>
       <NuxtLink to="/register">
         <button class="lcqpaS">
           <div class="bjhGPG">Create new account</div>
