@@ -1,9 +1,10 @@
 <template>
   <main>
-    <section class="pt-20 pb-28 min-h-screen flex flex-col justify-center">
-      <div class="px-6 w-full mx-auto max-w-6xl">
+    <div class="st-hero-text st-style1 st-color1 text-center">
+      <div class="st-blue-color">
+        <Header />
         <slot />
       </div>
-    </section>
+    </div>
   </main>
 </template>
