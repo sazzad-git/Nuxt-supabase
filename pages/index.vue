@@ -21,7 +21,7 @@
         <!-- <div :style="toggle && { display: 'block !important' }" class="st-hero-img2"> -->
         <div class="st-hero-img2 text-center">
           <img
-            src="assets/img/kelly-sikkema-xoU52jUVUXA-unsplash.jpg"
+            src="../assets/img/kelly-sikkema-xoU52jUVUXA-unsplash.jpg"
             alt="questionnaire"
           />
         </div>

@@ -5,7 +5,7 @@
         <div class="st-main-header-in">
           <div class="st-site-branding">
             <a href="#" class="st-logo-link"
-              ><img src="../assets/img/erc-pro.png" alt="demo"
+              ><img src="erc-pro.png" alt="demo"
             /></a>
           </div>
           <!-- For Site Title -->
@@ -166,10 +166,5 @@ const logout = async () => {
   }
 };
 
-useHead({
-  title: "Home - Authentication project",
-  meta: [
-    { name: "description", content: "Authentication with email and password." },
-  ],
-});
+useHead({});
 </script>

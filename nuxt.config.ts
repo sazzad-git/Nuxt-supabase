@@ -7,8 +7,13 @@ export default defineNuxtConfig({
     layoutTransition: { name: "layout", mode: "out-in" },
     pageTransition: { name: "page", mode: "out-in" },
     head: {
+      title: "ERC Pro | Get Your ERC Now",
       charset: "utf-16",
-      viewport: "width=500, initial-scale=1",
+      meta: [
+        { name: "description", content: "See of you qualify for the ERC" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        { name: "author", content: "FirmSalesLLC" },
+      ],
       link: [
         { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
         {
